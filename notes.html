@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#notes-content">Skip to content</a>
     <header class="site-header site-header-solid">
       <div class="header-inner">
         <p class="wordmark"><a href="index.html">Xuanzhe Hou</a></p>
@@ -19,11 +20,72 @@
         </nav>
       </div>
     </header>
-    <main class="subpage-main">
-      <h1>Notes</h1>
-      <ol class="simple-list">
-        <li><span class="placeholder">[Note title]</span> - <span class="placeholder">[Date]</span></li>
-      </ol>
+    <main class="notes-page" id="notes-content">
+      <aside class="notes-sidebar" aria-label="Notes table of contents">
+        <div class="notes-sidebar-inner">
+          <p class="notes-sidebar-title">Table of Contents</p>
+          <nav class="notes-toc" aria-label="On this page">
+            <a href="#about-notes">What's in here?</a>
+            <a href="#course-notes">Course Notes</a>
+            <a href="#reading-notes">Reading Notes</a>
+          </nav>
+        </div>
+      </aside>
+
+      <article class="notes-article">
+        <header class="notes-heading">
+          <h1><span aria-hidden="true">$</span> ls ./Notes</h1>
+          <p>Course notes and reading notes</p>
+        </header>
+
+        <blockquote class="notes-summary">
+          <p>Notes from mathematics, economics, and related topics.</p>
+        </blockquote>
+
+        <section class="notes-section" id="about-notes">
+          <h2>What's in here?</h2>
+          <p>
+            This page collects notes from courses, independent reading, and topics that I have studied.
+          </p>
+        </section>
+
+        <section class="notes-section" id="course-notes">
+          <h2>Course Notes</h2>
+
+          <div class="notes-group">
+            <h3><span class="placeholder">[Academic term]</span></h3>
+
+            <section class="note-entry">
+              <h4><span class="placeholder">[Course title and number]</span></h4>
+              <p class="placeholder">
+                [A short description of the course, the main topics covered, and what the notes contain.]
+              </p>
+            </section>
+
+            <section class="note-entry">
+              <h4><span class="placeholder">[Course title and number]</span></h4>
+              <p class="placeholder">
+                [A short description of the course, the main topics covered, and what the notes contain.]
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <section class="notes-section" id="reading-notes">
+          <h2>Reading Notes</h2>
+
+          <div class="notes-group">
+            <h3><span class="placeholder">[Topic or year]</span></h3>
+
+            <section class="note-entry">
+              <h4><span class="placeholder">[Book, paper, or topic title]</span></h4>
+              <p class="placeholder">
+                [A short description of the material and the questions explored in these notes.]
+              </p>
+            </section>
+          </div>
+        </section>
+      </article>
     </main>
     <footer class="site-footer"><p>&copy; 2026 Xuanzhe Hou</p></footer>
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script><script type="module" src="script.js"></script>
