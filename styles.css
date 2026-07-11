@@ -392,50 +392,10 @@ button:focus-visible {
 }
 
 .notes-page {
-  width: min(calc(100% - 48px), var(--page-width));
+  width: min(calc(100% - 48px), 780px);
   min-height: calc(100vh - 175px);
   margin: 0 auto;
   padding: 64px 0 96px;
-  display: grid;
-  grid-template-columns: 220px minmax(0, 780px);
-  justify-content: space-between;
-  gap: 72px;
-}
-
-.notes-sidebar {
-  min-width: 0;
-  padding-right: 32px;
-  border-right: 1px solid var(--line);
-}
-
-.notes-sidebar-inner {
-  position: sticky;
-  top: 32px;
-}
-
-.notes-sidebar-title {
-  margin: 0 0 12px;
-  color: #3f4c51;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.notes-toc {
-  display: flex;
-  flex-direction: column;
-  border-left: 2px solid #e2e4e5;
-}
-
-.notes-toc a {
-  padding: 6px 0 6px 15px;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.35;
-  text-decoration: none;
-}
-
-.notes-toc a:hover {
-  color: var(--accent);
 }
 
 .notes-article {
@@ -443,46 +403,13 @@ button:focus-visible {
   max-width: 780px;
 }
 
-.notes-heading {
-  margin-bottom: 34px;
-  padding-left: 18px;
-  border-left: 4px solid var(--accent);
-}
-
-.notes-heading h1 {
-  margin: 0;
-  color: #3f4c51;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.notes-heading h1 span {
-  color: var(--accent);
-}
-
-.notes-heading p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.notes-summary {
-  margin: 0 0 36px;
-  padding: 9px 16px;
-  border-left: 3px solid #dfe2e3;
-  color: var(--muted);
-  font-style: italic;
-}
-
-.notes-summary p {
-  margin: 0;
-}
-
 .notes-section {
   margin-top: 46px;
   scroll-margin-top: 24px;
+}
+
+.notes-article > .notes-section:first-child {
+  margin-top: 0;
 }
 
 .notes-section h2 {
@@ -549,10 +476,6 @@ button:focus-visible {
     width: 220px;
   }
 
-  .notes-page {
-    grid-template-columns: 190px minmax(0, 1fr);
-    gap: 42px;
-  }
 }
 
 @media (max-width: 720px) {
@@ -695,36 +618,6 @@ button:focus-visible {
   .notes-page {
     width: calc(100% - 32px);
     padding: 44px 0 70px;
-    display: block;
-  }
-
-  .notes-sidebar {
-    margin-bottom: 42px;
-    padding: 0 0 22px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .notes-sidebar-inner {
-    position: static;
-  }
-
-  .notes-toc {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px 18px;
-    border-left: 0;
-  }
-
-  .notes-toc a {
-    padding: 0;
-    text-decoration: underline;
-    text-decoration-color: #c5cacc;
-    text-underline-offset: 3px;
-  }
-
-  .notes-heading h1 {
-    font-size: 29px;
   }
 
   .notes-section {
