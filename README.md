@@ -1,12 +1,18 @@
 # Xuanzhe Hou personal website
 
 A static, responsive personal website inspired by the structure of a traditional
-academic homepage. It uses plain HTML, CSS, and JavaScript, so no build step is
-required.
+academic homepage. It uses plain HTML, CSS, JavaScript, and a minimal Vite build.
 
 ## Preview
 
-Open `index.html` in a browser.
+Run:
+
+```sh
+pnpm install
+pnpm dev
+```
+
+Create a production build with `pnpm build`.
 
 ## Personalize
 
