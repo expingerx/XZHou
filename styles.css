@@ -75,7 +75,7 @@ button:focus-visible {
 
 .hero {
   position: relative;
-  min-height: 505px;
+  min-height: 640px;
   overflow: hidden;
   color: #ffffff;
 }
@@ -177,7 +177,7 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   width: min(calc(100% - 48px), var(--page-width));
-  min-height: 505px;
+  min-height: 640px;
   margin: 0 auto;
   padding: 80px 0 38px;
   display: grid;
@@ -220,10 +220,6 @@ button:focus-visible {
 
 .hero-contact p {
   margin: 0 0 4px;
-}
-
-.cv-link {
-  font-size: 24px;
 }
 
 .profile-placeholder {
@@ -474,13 +470,14 @@ button:focus-visible {
   }
 
   .hero {
-    min-height: calc(100svh - 44px);
+    min-height: 0;
   }
 
   .hero-content {
-    min-height: calc(100svh - 44px);
-    padding: 88px 0 190px;
-    display: block;
+    min-height: 0;
+    padding: 88px 0 38px;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro-copy {
@@ -501,18 +498,14 @@ button:focus-visible {
   }
 
   .hero-contact {
-    max-width: calc(100% - 145px);
-  }
-
-  .cv-link {
-    font-size: 21px;
+    max-width: none;
   }
 
   .profile-placeholder {
-    position: absolute;
-    right: 0;
-    bottom: 26px;
-    width: 120px;
+    position: static;
+    align-self: center;
+    width: 150px;
+    margin-top: 18px;
     aspect-ratio: 3 / 4;
   }
 
@@ -556,17 +549,12 @@ button:focus-visible {
 }
 
 @media (max-width: 360px) {
-  .personal-interest {
-    display: none;
-  }
-
   .hero-content {
-    padding-bottom: 108px;
+    padding-bottom: 32px;
   }
 
   .profile-placeholder {
-    bottom: 18px;
-    width: 82px;
+    width: 132px;
   }
 
   .profile-placeholder span {
