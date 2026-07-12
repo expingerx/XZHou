@@ -418,7 +418,7 @@ button:focus-visible {
   pointer-events: none;
 }
 
-.notes-body > * {
+.notes-body > :not(.skip-link) {
   position: relative;
   z-index: 1;
 }
