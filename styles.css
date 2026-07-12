@@ -401,7 +401,8 @@ button:focus-visible {
 .notes-body {
   position: relative;
   min-height: 100vh;
-  background-color: #e5dfd2;
+  background-color: #18211d;
+  color: #eef2f0;
   background-image: url("assets/notes-background.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -414,7 +415,7 @@ button:focus-visible {
   position: fixed;
   z-index: 0;
   inset: 0;
-  background: rgba(255, 252, 244, 0.7);
+  background: rgba(18, 27, 24, 0.55);
   pointer-events: none;
 }
 
@@ -425,12 +426,14 @@ button:focus-visible {
 
 .notes-body .site-header-solid,
 .notes-body .site-footer {
-  background: rgba(255, 252, 244, 0.82);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(18, 27, 24, 0.8);
+  color: #ffffff;
   backdrop-filter: blur(6px);
 }
 
 .notes-body .note-entry {
-  border-color: rgba(71, 78, 76, 0.28);
+  border-color: rgba(255, 255, 255, 0.24);
 }
 
 .notes-article {
@@ -491,6 +494,25 @@ button:focus-visible {
 .note-entry p {
   margin: 0;
   color: var(--muted);
+}
+
+.notes-body .notes-section h2,
+.notes-body .notes-group h3,
+.notes-body .note-entry h4 {
+  color: #f4f7f5;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.notes-body .notes-section > p {
+  color: #edf1ef;
+}
+
+.notes-body .note-entry p {
+  color: #dce3df;
+}
+
+.notes-body .site-footer {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 @media (max-width: 900px) {
@@ -658,6 +680,15 @@ button:focus-visible {
   .notes-body {
     background-position: center top;
     background-attachment: scroll;
+  }
+
+  .notes-body .site-nav {
+    background: rgba(18, 27, 24, 0.97);
+    color: #ffffff;
+  }
+
+  .notes-body .site-nav a {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
   }
 
   .notes-section {
