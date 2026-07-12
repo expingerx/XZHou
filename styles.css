@@ -398,6 +398,41 @@ button:focus-visible {
   padding: 64px 0 96px;
 }
 
+.notes-body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #e5dfd2;
+  background-image: url("assets/notes-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.notes-body::before {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  background: rgba(255, 252, 244, 0.7);
+  pointer-events: none;
+}
+
+.notes-body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.notes-body .site-header-solid,
+.notes-body .site-footer {
+  background: rgba(255, 252, 244, 0.82);
+  backdrop-filter: blur(6px);
+}
+
+.notes-body .note-entry {
+  border-color: rgba(71, 78, 76, 0.28);
+}
+
 .notes-article {
   min-width: 0;
   max-width: 780px;
@@ -618,6 +653,11 @@ button:focus-visible {
   .notes-page {
     width: calc(100% - 32px);
     padding: 44px 0 70px;
+  }
+
+  .notes-body {
+    background-position: center top;
+    background-attachment: scroll;
   }
 
   .notes-section {
