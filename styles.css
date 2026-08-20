@@ -222,19 +222,14 @@ button:focus-visible {
   margin: 0 0 4px;
 }
 
-.profile-placeholder {
+.profile-photo {
+  display: block;
   width: 266px;
-  aspect-ratio: 266 / 376;
-  display: grid;
-  place-items: center;
-  background: rgba(21, 48, 39, 0.84);
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid rgba(255, 255, 255, 0.48);
-  color: #ffffff;
-}
-
-.profile-placeholder span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 62px;
 }
 
 .intro-note {
@@ -529,7 +524,7 @@ button:focus-visible {
     gap: 42px;
   }
 
-  .profile-placeholder {
+  .profile-photo {
     width: 220px;
   }
 
@@ -626,16 +621,12 @@ button:focus-visible {
     max-width: none;
   }
 
-  .profile-placeholder {
+  .profile-photo {
     position: static;
     align-self: center;
     width: 150px;
     margin-top: 18px;
     aspect-ratio: 3 / 4;
-  }
-
-  .profile-placeholder span {
-    font-size: 38px;
   }
 
   .intro-note {
@@ -705,12 +696,8 @@ button:focus-visible {
     padding-bottom: 32px;
   }
 
-  .profile-placeholder {
+  .profile-photo {
     width: 132px;
-  }
-
-  .profile-placeholder span {
-    font-size: 30px;
   }
 }
 
