@@ -87,7 +87,7 @@ button:focus-visible {
 }
 
 .hero-media {
-  background-image: url("assets/yuelu-academy.jpg");
+  background-image: url("assets/yuelu-academy-autumn.png");
   background-position: center bottom;
   background-size: cover;
 }
@@ -293,6 +293,7 @@ button:focus-visible {
 
 .publications-section > h2 {
   margin-bottom: 35px;
+  text-align: left;
 }
 
 .publication-group {
@@ -309,6 +310,7 @@ button:focus-visible {
 .publication-list {
   margin: 0;
   padding-left: 28px;
+  list-style-type: square;
 }
 
 .publication-list > li {
@@ -386,16 +388,6 @@ button:focus-visible {
   margin: 0 0 10px;
 }
 
-.miscellaneous-main {
-  width: min(calc(100% - 48px), 780px);
-}
-
-.miscellaneous-main > p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.75;
-}
-
 .notes-page {
   width: min(calc(100% - 48px), 780px);
   min-height: calc(100vh - 175px);
@@ -408,7 +400,7 @@ button:focus-visible {
   min-height: 100vh;
   background-color: #18211d;
   color: #eef2f0;
-  background-image: url("assets/notes-background.png");
+  background-image: url("assets/notes-blossom-background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -420,7 +412,7 @@ button:focus-visible {
   position: fixed;
   z-index: 0;
   inset: 0;
-  background: rgba(18, 27, 24, 0.55);
+  background: rgba(18, 27, 24, 0.4);
   pointer-events: none;
 }
 
@@ -514,6 +506,19 @@ button:focus-visible {
 
 .notes-body .note-entry p {
   color: #dce3df;
+}
+
+.notes-body .note-entry a {
+  color: inherit;
+}
+
+.notes-body .note-entry a:hover {
+  color: #ffffff;
+  text-decoration-thickness: 2px;
+}
+
+.note-entry p + p {
+  margin-top: 6px;
 }
 
 .notes-body .site-footer {
