@@ -604,6 +604,19 @@ button:focus-visible {
     display: none;
   }
 
+  /* .hero a sits later in this file with the same specificity, so it repainted
+     the open menu's links white on the white panel. */
+  .hero .site-nav a {
+    color: inherit;
+  }
+
+  /* .notes-body > :not(.skip-link) puts the header and <main> on the same
+     stacking level; <main> comes later, so the fixed menu panel was painted
+     underneath the page content. */
+  .notes-body > .site-header {
+    z-index: 40;
+  }
+
   .hero {
     min-height: 0;
   }
@@ -689,7 +702,8 @@ button:focus-visible {
   }
 
   .notes-body .site-nav {
-    background: rgba(18, 27, 24, 0.97);
+    /* opaque: at 0.97 the page text behind stayed legible through the panel */
+    background: #18211d;
     color: #ffffff;
   }
 
